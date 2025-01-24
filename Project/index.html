@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Inicio</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Bienvenido al Sistema de Registro</h1>
+    <p>Selecciona un modo para continuar:</p>
+    <button class="btn" onclick="goToGuestMode()">Modo Invitado</button>
+    <button class="btn" onclick="verifyOrganizerMode()">Modo Organizador</button>
+    <div id="organizer-login" style="display: none; margin-top: 20px;">
+      <input type="text" id="organizer-name" placeholder="Ingrese su nombre completo">
+      <button class="btn" onclick="checkOrganizerAccess()">Ingresar</button>
+      <p id="error-message" style="color: red; margin-top: 10px;"></p>
+    </div>
+  </div>
+  <script src="js/index.js"></script>
+</body>
+</html>
